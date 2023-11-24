@@ -1,0 +1,98 @@
+.bandeau 
+{
+    background-image: url(/Assets/img/btm-img1.gif);
+    min-height: 368px;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: cover;
+}
+
+.menu
+{
+    font-family: Italianno;
+    line-height: normal;
+    flex-shrink: 0;
+} 
+
+.bandeau2 
+{
+
+    background: url(/Assets/img/GIF-1.gif) no-repeat;
+    min-height: 364px;
+    background-position: 50%;
+    background-size: cover;
+} 
+
+.button2 
+{
+    color: #313133; 
+    font-family: Italianno; 
+    background: linear-gradient(90deg, rgba(129,230,217,1), rgba(79,209,197,1) 100%);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    position: relative;
+    z-index: 1;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.button2:focus,
+.button2:hover
+{
+    color: #313133;
+    background: linear-gradient(90deg, rgb(79, 173, 173), rgb(59, 61, 201));
+    transform: translateY(-6px);
+} 
+
+.button2:before
+{
+    content: '';
+    min-width: calc(100% + 17px);
+    min-height: calc(100% + 17px);
+    box-shadow: 0 0 40px rgba(0,255,203,.7);
+    opacity: 0;
+    transform: translateX(-50%) translateY(-50%) scale(0.5);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transition: all .3s ease-in-out 0s;
+}
+
+.button2 hover:before
+{
+    opacity: 1;
+    transform: translateX(-50%) translateY(-50%) scale(1);
+}
+
+.bandeau3 {
+    background-image: url(/Assets/img/0pizza.gif);
+    min-height: 368px;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: cover;
+    font-family: Italianno; 
+}  
+
+.bandeau11 
+{
+    background-image: url(/Assets/img/ggif.gif);
+    min-height: 500px;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: cover;
+}
+
+.bandeau21 {
+
+    background-image: url(/Assets/img/00000.jpg);
+    min-height: 368px;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: cover;
+    font-family: Italianno; 
+}
+
+.contbody {
+    background-image: url(/Assets/img/001.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
