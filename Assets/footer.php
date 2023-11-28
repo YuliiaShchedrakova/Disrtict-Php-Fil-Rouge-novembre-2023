@@ -3,7 +3,7 @@
        <div class="container-fluid bandeau2">
 
             <div >
-                <<div class="container p-1">
+                <div class="container p-1">
 
             
 

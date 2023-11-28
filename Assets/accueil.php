@@ -124,12 +124,12 @@
 
     <!--Footer-->
 
-    <div class="container-fluid ">
+   
 
 <?php
 include('footer.php');
 ?>
-
+    </div>
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
@@ -191,7 +191,7 @@ $(document).ready(function () {
 
             $("#search").on("done", function (ac2) {
             
-            f(ac2.which===13){
+            if(ac2.which===13){
             research();
             };
         });

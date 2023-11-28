@@ -1,16 +1,16 @@
 <?php
 
 session_start();
-
-if(isset($_POST["envoyer"])){
+var_DUMP("a");
+if(isset($_POST["btn"])){
 
 //variables
 
-$demande=$_POST["demande"];
+$demande=$_POST["question"];
 $email=$_POST["email"];
-$telephone=$_POST["telephone"];
+$telephone=$_POST["tel"];
 $nom=$_POST["nom"];
-$prenom=$_POST["prenom"];
+$prenom=$_POST["prénom"];
 
 
 
@@ -20,9 +20,9 @@ function fun1($email){
     if (preg_match($validation,$email)){
 return true;
     }
-    else{
+    else{    echo "<p> Ecrire votre email <p>";
         return false;
-        echo "<p> Ecrire votre email <p>";
+    
     };
 }; 
 
@@ -33,8 +33,9 @@ function fun2($telephone){
 return true;
     }
     else{
+             echo "<p> Ecrire votre numéro de téléphone <p>";
         return false;
-        echo "<p> Ecrire votre numéro de téléphone <p>";
+   
     };
 };
 
@@ -46,8 +47,9 @@ function fun3($nom){
 return true;
     }
     else{
+          echo "<p> Ecrire votre nom <p>";
         return false;
-        echo "<p> Ecrire votre nom <p>";
+      
     };
 };
 function fun4($prenom){
@@ -56,8 +58,9 @@ function fun4($prenom){
 return true;
     }
     else{
+         echo "<p> Ecrire votre prénom <p>";
         return false;
-        echo "<p> Ecrire votre prénom <p>";
+       
     };
 };
 
@@ -68,41 +71,42 @@ function fun5($demande){
 return true;
     }
     else{
+         echo "<p> Ecrire votre demande. Cette information est obligatoire ! <p>";
         return false;
-        echo "<p> Ecrire votre demande. Cette information est obligatoire ! <p>";
+       
     };
 };
 
 
 //!
 
-if(fun1($email)===true&fun2($telephone)===fun3($nom)===true&fun4($prenom)===true&fun5($demande)===true){
+if(fun1($email)==true &fun2($telephone)==true &fun3($nom)==true&fun4($prenom)==true&fun5($demande)==true){
 
-$_SESSION["demande"]=$demande;
+$_SESSION["question"]=$demande;
 $_SESSION["email"]=$email;
-$_SESSION["telephone"]=$telephone;
+$_SESSION["tel"]=$telephone;
 $_SESSION["nom"]=$nom;
-$_SESSION["prenom"]=$prenom;
+$_SESSION["prénom"]=$prenom;
 
 $nomFichier=date("Y-m-d-H-i-s");
 $contenuFichier="Nom : ".$_SESSION["nom"]
-."\r\n Prenom : ".$_SESSION["prenom"]
+."\r\n Prenom : ".$_SESSION["prénom"]
 ."\r\n  Email : ".$_SESSION["email"]
-."\r\n  Telephone : ".$_SESSION["telephone"]
-."\r\n  Demande :".$_SESSION["demande"];
+."\r\n  Telephone : ".$_SESSION["tel"]
+."\r\n  Demande :".$_SESSION["question"];
 file_put_contents($nomFichier,$contenuFichier);
-header("Location: index.php?page=demande");
-exit(e.preventDefault());
+header("Location: dem.php");
+exit();
 }
 
 else{
 unset($_SESSION["auth"]);
 session_destroy();
 
-header("Location: in.php?page=Contact");
-exit(e.preventDefault());
-};
+// header("Location: in.php?page=Contact");
+// exit(e.preventDefault());
+// };
 
 };
-
+};
 ?>

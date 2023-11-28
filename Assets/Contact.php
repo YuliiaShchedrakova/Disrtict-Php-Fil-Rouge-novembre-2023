@@ -6,7 +6,7 @@
         content="Large assortiment de menus-pizzas, burgers, sandwichs, wraps, salades, légumes. Livrasson gratuit">
     <meta name="keywords" content="resto, burger, pizza, salade, livrason gratuit">
     <link rel="stylesheet" href="css/mystyles.css"> 
-   
+
 
 
     <!--!-->
@@ -42,15 +42,15 @@ include('header.php');
 
 <!--form-->      
 
-            <form action="Formulaire_de_contact.php" method="POST" class="col-12 col-md-8">
-            <form class="d-none col-10 d-md-block menu fst-italic gy-3 fs-5 text">
+            <form action="Formulaire_de_contact.php" method="POST" class="col-12 col-md-8 d-none col-10 d-md-block menu fst-italic gy-3 fs-5 text">
+            
 
 
                 <div class="form-row">
 
                     <div class="col-10 mr-4 ml-4 mb-4 mt-4 ">
                         <label class="font-weight-bold font-italic text-right ">Nom</label>
-                        <input type="text" id="nom" class="form-control">
+                        <input type="text" name="nom" class="form-control">
                             <div id="n" style="display:none;" class="alert bg-transparent border-0 fade show alert-info alert-dismissible " role="alert">
                             <strong>Cette information est obligatoire !</strong>
                             </div>
@@ -58,7 +58,7 @@ include('header.php');
 
                     <div class="col-10  mr-4 ml-4 mb-4 mt-4">
                         <label class="font-weight-bold font-italic text-right">Prénom</label>
-                        <input type="text" id="prénom" class="form-control">
+                        <input type="text" name="prénom" class="form-control">
                         <div id="p" class="alert bg-transparent border-0 fade show alert-info alert-dismissible"
                             style="display:none;" role="alert">
                             <strong>Cette information est obligatoire !</strong>
@@ -70,7 +70,7 @@ include('header.php');
 
                     <div class="col-10  mr-4 ml-4 mb-4 mt-4">
                         <label class="font-weight-bold font-italic text-right">Email</label>
-                        <input type="text" id="email" class="form-control">
+                        <input type="text" name="email" class="form-control">
                         <div id="em" class="alert bg-transparent border-0 fade show alert-info alert-dismissible"
                             style="display:none;" role="alert">
                             <strong>Cette information est obligatoire !</strong>
@@ -79,7 +79,7 @@ include('header.php');
 
                     <div class="col-10  mr-4 ml-4 mb-4 mt-4">
                         <label class="font-weight-bold font-italic text-right">Téléphone</label>
-                        <input type="text" id="tel" class="form-control">
+                        <input type="text" name="tel" class="form-control">
                         <div id="telephone" style="display:none;"
                             class="alert bg-transparent border-0 fade show alert-info alert-dismissible" role="alert">
                             <strong>Cette information est obligatoire ! </strong>
@@ -89,7 +89,7 @@ include('header.php');
 
                 <div class="form-group col-10  mr-4 ml-4 mb-4 mt-4">
                     <label class="font-weight-bold font-italic text-right">Votre Demande</label>
-                    <textarea class="form-control" id="question" rows="4"></textarea>
+                    <textarea class="form-control" name="question" rows="4"></textarea>
                     <div id="q" class="alert bg-transparent border-0 fade show alert-info alert-dismissible"
                         style="display:none;" role="alert">
                         <strong>Cette information est obligatoire !</strong>
@@ -102,7 +102,7 @@ include('header.php');
 
 <div class="item-content text-center ml-4 pl-4 "> 
     <div class="row text-center d-flex mt-5 button2 col-md-6 rounded-4" style="width: 20rem;">
-    <input type="submit" id="btn" class="btn btn-outline-success my-2 fst-italic rounded-4"
+    <button type="submit" name="btn" class="btn btn-outline-success my-2 fst-italic rounded-4"
     value="Envoyer"> 
 
 
