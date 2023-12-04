@@ -89,10 +89,16 @@
     background-position: 50%;
     background-size: cover;
     font-family: Italianno; 
+    
 }
 
 .contbody {
     background-image: url(/Assets/img/001.jpg);
     background-size: cover;
     background-attachment: fixed;
+}
+
+@media sreen and (max-width: 576px) { 
+    
+
 }

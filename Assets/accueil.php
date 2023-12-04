@@ -26,9 +26,9 @@
 
 
     <!--!!-->
-
-    <div id="categorie" class="d-flex justify-content-space-around"></div>
-
+    <div class="d-flex justify-content-center">
+        <div id="categorie" class=" row col-12 col-md-9 d-flex justify-content-center mx-auto"></div>
+    </div>
         <!-- <div class="container "> -->
 
             <!--1-->
@@ -156,7 +156,7 @@ $(document).ready(function () {
                 
                 for (i = 0; i < cat.length; i++) {
                     var index = cat [i];
-                    var resultat = `<div class="card w-25 mr-4 mb-4 d-flex justify-content-space-around"
+                    var resultat = `<div class="card d-flex col-12 col-md-4 my-4 mx-5 justify-content-center"
                 style=" background-image: url(''); background-size: cover;">
                 <img class="card-img-top" src="img/pic/category/${index.image}" alt="plat">
                 <div class="card-body">
@@ -167,20 +167,22 @@ $(document).ready(function () {
                     afficher.append(resultat);
                 };
 
-                var aff2=$("cat2");
-                for (i = 0; i < 3; i++) {
-                    var top = pl[i];
-                    var plt = `<div class="card w-25 mr-4 mb-4"
-                style=" background-image: url(''); background-size: cover;">
-                <img class="card-img-top" src="img/pic/food/${top.image}" alt="plat">
-                <div class="card-body">
-                    <h5 class="card-title font-weight-bold font-italic">${top.libelle}</h5>
-                    <p class="card-text">${top.description}<br> Menu: ${top.prix} </p>
-                    <a href="commande.html" class="btn btn-dark">commander</a>
-                </div>
-            </div>`
-                    afficher.append(plt);
-                };
+                // var aff2=$("cat2");
+                // for (i = 0; i < 3; i++) {
+                //     var top = pl[i];
+                //     var plt = `
+                //     <div class="card w-25 mr-4 mb-4"
+                //                 style=" background-image: url(''); background-size: cover;">
+                //                     <img class="card-img-top" src="img/pic/food/${top.image}" alt="plat">
+                //                     <div class="card-body">
+                //                         <h5 class="card-title font-weight-bold font-italic">${top.libelle}</h5>
+                //                         <p class="card-text">${top.description}<br> Menu: ${top.prix} </p>
+                //                         <a href="commande.html" class="btn btn-dark">commander</a>
+                //                     </div>
+                            
+                //             </div>`
+                // //     afficher.append(plt);
+                // };
             });
 
         //SEARCH

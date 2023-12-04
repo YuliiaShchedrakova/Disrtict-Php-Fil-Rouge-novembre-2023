@@ -23,17 +23,7 @@
  include('header2.php');
  ?>
 
-    </header>
 
-    <hr>
-
-    <!--Img fon-->
-
-    <div class="container-fluid bandeau3 fs-1">
-        <p>Pizza<p>
-    </div>
-
-    <hr style="border: 10px solid">
 
     <!--Cards-->
 

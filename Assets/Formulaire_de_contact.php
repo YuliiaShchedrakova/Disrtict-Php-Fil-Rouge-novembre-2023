@@ -1,7 +1,7 @@
 <?php
 
 session_start();
-var_DUMP("a");
+
 if(isset($_POST["btn"])){
 
 //variables

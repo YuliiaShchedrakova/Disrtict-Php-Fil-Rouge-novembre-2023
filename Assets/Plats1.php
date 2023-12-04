@@ -25,8 +25,9 @@
  include('header2.php');
  ?>
 
-    <div id="plats" class="d-flex justify-content-space-around"></div>
-
+<div class="d-flex justify-content-center">
+    <div id="plats" class="row col-12 col-md-9 d-flex justify-content-center mx-auto"></div>
+</div>
 
      <!--Footer-->
 
@@ -165,7 +166,7 @@ console.log(data)
 
 var tp=pl[i];
 
-var resultat=`<div class="card w-25 mr-4 mb-4"
+var resultat=`<div class="card card d-flex col-12 col-md-4 my-4 mx-5 justify-content-center "
                 style=" background-image: url(''); background-size: cover;">
                 <img class="card-img-top" src="img/pic/food/${tp.image}" alt="plat">
                 <div class="card-body">
