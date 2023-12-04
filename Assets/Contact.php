@@ -102,8 +102,7 @@ include('header.php');
 
 <div class="item-content text-center ml-4 pl-4 "> 
     <div class="row text-center d-flex mt-5 button2 col-md-6 rounded-4" style="width: 20rem;">
-    <button type="submit" name="btn" class="btn btn-outline-success my-2 fst-italic rounded-4"
-    value="Envoyer"> 
+    <button type="submit" name="btn" class="btn btn-outline-success my-2 fst-italic rounded-4">Envoyer</button> 
 
 
 </div> 

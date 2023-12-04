@@ -90,6 +90,13 @@
     background-size: cover;
     font-family: Italianno; 
     
+} 
+
+
+.card-img-top {
+    width: 80px;
+    height: 100%;
+    
 }
 
 .contbody {

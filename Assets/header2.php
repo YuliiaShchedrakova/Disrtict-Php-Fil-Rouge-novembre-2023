@@ -34,10 +34,10 @@
                     </ul>
                 </li>
                 <li class="nav-item mx-4">
-                    <a class="nav-link active" aria-current="page" href="Plats1.html">Plats</a>
+                    <a class="nav-link active" aria-current="page" href="Plats1.php">Plats</a>
                 </li>
                 <li class="nav-item mx-4">
-                    <a class="nav-link active" aria-current="page" href="Contact.html">Contact</a>
+                    <a class="nav-link active" aria-current="page" href="Contact.php">Contact</a>
                 </li>
             </ul>
         </div>
