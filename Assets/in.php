@@ -25,6 +25,7 @@
 <!-- php -->
         
         <?php
+        
     session_start();
 
 if (($_SESSION['url'])!=($_SERVER['HTTP_REFERER'])) {
@@ -42,8 +43,7 @@ elseif (!isset($_SESSION['url']) ) {
 ?>
 
 <hr>
-<div><?= $_SESSION['url'] ?></div>
-<hr>
+
 
 
 <!-- header -->
@@ -146,42 +146,10 @@ elseif (!isset($_SESSION['url']) ) {
                 <main>
 
 
-<!-- php -->
-
-    <?php
-
-
-    if(!isset($_GET['page'])|| empty($_GET['page'])||$_GET['page']=='accueil')
-    {
-
-        include('accueil.php');
-    }
-
-    else if($_GET['page']=='contact'){
-        include('Contact.php');
-    }
-
-    else if($_GET['page']=='dem'){
-        include('dem.php');
-    }
-
-    else if($_GET['page']=='categorie'){
-        include('Catégories.php');
-    }
-
-    else if($_GET['page']=='plats'){
-        include('Plats1.php');
-    }
-
-    else if($_GET['page']=='1'){
-        include('1.php');
-    };                           
-    
-    ?>
 
 </main>
 
-<!-- php -->
+<!-- php footer -->
 
         <?php
         include('footer.php');

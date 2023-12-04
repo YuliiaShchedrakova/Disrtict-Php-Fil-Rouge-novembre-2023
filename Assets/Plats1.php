@@ -134,8 +134,6 @@
 
 
 
-   
-
     <!--!-->
 
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
@@ -151,6 +149,8 @@
         <script src="District_JSON.json"></script> 
 
 
+<!-- script -->
+        
 <script>
 
 
@@ -180,7 +180,7 @@ afficher.append(resultat);
     };
 });
 $("#search").click( function(pl2){
-   search();
+search();
 });
 
 
@@ -219,10 +219,8 @@ plats.append(`<div class="card w-25 mr-4 mb-4"
                 </div>
             </div> `)
 };
-    });
 });
-
-
+});
 });
 };
 
